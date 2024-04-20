@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/css/multi-select-tag.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test page</title>
+</head>
+
+<body>
+    <style>
+        @media only screen and (max-width: 468px) {
+
+            /* Adjust the container width for smaller screens */
+            .container {
+                width: 100%;
+            }
+
+            /* Make the researcher cards stack vertically */
+
+            .researcher {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .researcher_next {
+                min-width: fit-content;
+                display: flex;
+                /* align-items: center; */
+                text-align: left;
+                width: 100%;
+            }
+
+            .alumni {
+                min-width: fit-content;
+                display: flex;
+                flex-direction: column;
+                /* align-items: center; */
+                text-align: left;
+                width: 100%;
+            }
+
+            .researcher-text {
+                margin-left: 1em;
+                height: 100%;
+                min-width: fit-content;
+                font-size: 1.5rem;
+                display: block;
+            }
+
+            .researcher img {
+                max-width: 90%;
+                width: 60% !important;
+                margin-right: 2em;
+                height: 100%;
+            }
+        }
+
+        /* Adjust the alumni section layout */
+        .col-8 {
+            margin-bottom: 1em;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+
+
+    <div class="container col-4" style="margin-top: 4em;align-self: center;">
+
+        <form action="">
+            <select name="countries" id="countries" multiple>
+                <option value="1">Assistant Professor</option>
+                <option value="2">MS(R) student</option>
+                <option value="3">PhD student</option>
+                <option value="4">Research Assistant</option>
+                <option value="5">Undergraduate student</option>
+                <option value="6">Intern</option>
+                <option value="7">MSc Student</option>
+            </select>
+        </form>
+    </div>
+
+
+    <div>
+
+        <h2 class="container" style="margin-top: 2em;margin-bottom: 2em;">Group Members</h2>
+
+        <div class="container text-center researcher"
+            style="display: flex;flex-wrap: wrap;justify-content: space-between;">
+            <div key="Assistant Professor"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 40%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=1jEyhg_SiG3T1rqKmoTuDOn9ffB6--Wt6&amp;sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: fit-content;vertical-align: middle;border: 0;width: 40%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;float: left;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;" class="researcher-text">
+                        Akshay Pawar</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">Assistant Professor, Center for
+                            Brain Sciences and Applications (IIT-Jodhpur)
+                            <br />
+                            email: abc
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> sryt </li>
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> th </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> ghmh </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> stg </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div key="PhD student"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=1jLPSgfbNrzG9s-Sc75LkOE32aIAyxMvt&amp;sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: auto;vertical-align: middle;border: 0;width: 35%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;height: fit-content;">
+
+                <span class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Prafulla Date</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">PhD student, Electrical
+                            Engineering (IIT-Delhi)
+                            <br />
+                            email: asd
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> Neural effects of smartphone use,
+                            functional connectivity </li>
+
+                    </ul>
+                </span>
+            </div>
+
+
+
+            <div key="MS(R) student"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=1D-3MdkThidQnSalXWOopjUNP787IOdYJ&amp;sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: fit-content;vertical-align: middle;border: 0;width: 40%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;float: left;">
+
+                <span class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        M. Sanket Rathod</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">MS(R) student, Electrical
+                            Engineering (IIT-Delhi)
+                            <br />
+                            email: xyz
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> Mesoscale whole-brain network modeling,
+                            epilepsy, memory in mouse brains </li>
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> rsg er </li>
+
+
+                    </ul>
+                </span>
+            </div>
+
+            <div key="MS(R) student"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=19PKRK6SLGTqi4rRwLSzD2xN0-jmF_B0y&amp;sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: auto;vertical-align: middle;border: 0;width: 35%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;height: fit-content;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Mithali S. Roy</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">MS(R) student, Electrical
+                            Engineering (IIT-Delhi)
+                            <br />
+                            email: o8iyy
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> Modeling of dynamics in the mouse brain in
+                            different states of consciousness </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> sgrgr </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> thrrt </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> Personal interests: Chess, Swimming,
+                            Traveling, Yoga &amp; Meditation </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div key="Research Assistant"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%; "
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=1U7ccOONZLLwaCkACat0GAj2eyU-VOYJ0&amp;sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: fit-content;vertical-align: middle;border: 0;width: 40%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;float: left;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Richa Ahuja</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">Research Assistant, Center for
+                            Brain Science and Applications (IIT-Jodhpur)
+                            <br />
+                            email: dgsg
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> Neural effects of smartphone use, EEG
+                            biomarkers of anxiety </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div key="Undergraduate student"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=1exiOviyOY1yccVTsSrNvQJWs5kN2RVuS&amp;sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: auto;vertical-align: middle;border: 0;width: 35%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;height: fit-content;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Uma</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">Undergraduate student, Physics
+                            (IIT-Delhi)
+                            <br />
+                            email: rwr
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> PeneWise - Using Machine Learning and
+                            Embedded Systems for Cost-Effective Handwriting
+                            Digitization </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> Interested in robotics, especially in
+                            developing hardware for novel robotic
+                            applications. </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div key="MSc Student"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=1hbBGLJuTTPwJ5ORAFnm8nMlyMe-CNMRC&amp;sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: fit-content;vertical-align: middle;border: 0;width: 40%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;float: left;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Meera S.</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">MSc student, Cognitive Science
+                            (IIT-Delhi)
+                            <br />
+                            email: nvnv
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> Navigational network in the brain </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div key="MSc Student"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=1MI8R_8TO-Hoo5y3k305AsZwWDuZ50CEr&amp;sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: auto;vertical-align: middle;border: 0;width: 35%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;height: fit-content;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Mangesh Scott</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">MSc Student, HSS(Humanities and
+                            Social Sciences) Department
+                            <br />
+                            email: sgf
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> Modelling of the Dynamics of Foveation and
+                            Attention in Human Visual System </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div key="Intern"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=18XWPNihceVtI8JBrs42gwLeunGu5-w2f&sz=w300
+            " alt=""
+                    style="display: block;max-width: 100%;height: auto;vertical-align: middle;border: 0;width: 35%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;height: fit-content;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Izan</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">Intern, Electrical Engineering
+                            (IIT-Delhi)
+
+                            <br />
+                            email: utyjyt
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> I work on multidisciplinary topics that brings
+                            together Dynamics,
+                            Statistical Mechanics, Biological Systems & Computing. </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div key="Undergraduate student"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=1exiOviyOY1yccVTsSrNvQJWs5kN2RVuS&sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: auto;vertical-align: middle;border: 0;width: 35%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;height: fit-content;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Uri</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">Undergraduate student, Industrial
+                            design (Savannah College of Art and Design, GA)
+
+                            <br />
+                            email: bgfbf
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> Trekker Safety Device </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> Integration of device with Lora and GPS,
+                            incorporated in trekking pole,
+                            trekker when in trouble can send distsess signal </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> Reduce rescue search time by the authorities
+                        </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> sfsre </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div key="MSc Student"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://drive.google.com/thumbnail?id=1hbBGLJuTTPwJ5ORAFnm8nMlyMe-CNMRC&amp;sz=w300" alt=""
+                    style="display: block;max-width: 100%;height: auto;vertical-align: middle;border: 0;width: 35%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;height: fit-content;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Jane Doe</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">MSc Student, Computer Science
+                            Engineering(IIT BOMBAY)
+
+                            <br />
+                            email: wefwegtuiyu
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> ewfwef gwe </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> sfsre </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div key="Assistant Professor"
+                style="display: flex; justify-content: space-evenly;unicode-bidi: isolate;margin-bottom: 2.5em;width: 45%;max-width: 50%;"
+                class="researcher_next">
+
+                <img src="https://lh3.googleusercontent.com/d/1D-3MdkThidQnSalXWOopjUNP787IOdYJ=w300?authuser=0" alt=""
+                    style="display: block;max-width: 100%;height: auto;vertical-align: middle;border: 0;width: 35%;overflow-clip-margin: content-box;border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0 0 11px;margin: 1em;margin-right: 2em;height: fit-content;">
+
+                <div class="researcher-text">
+                    <h4 style="margin-left: 0;text-align: left;margin-bottom: 1em;">
+                        Bob Doe</h4>
+                    <p style="unicode-bidi: isolate;text-align: left;">
+                        <i style="box-sizing: border-box;left: 0;padding-down: 2em;">Assistant Professor, NIT Surat
+
+                            <br />
+                            email: bgfbf
+                        </i>
+                    </p>
+
+                    <ul
+                        style="overflow: hidden;display: block;list-style-type: disc;margin-inline-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;unicode-bidi: isolate;">
+
+
+                        <li style="text-align: left;margin-left: 0.7em;"> wefwe ef </li>
+                        
+                        <li style="text-align: left;margin-left: 0.7em;"> gweegewgwe ewgewg seagewgerch gewweg 
+                        </li>
+                        <li style="text-align: left;margin-left: 0.7em;"> sfsre </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <h2 class="container" style="margin-top: 2em;margin-bottom: 2em;">Alumni</h2>
+
+        <div class="container text-center">
+            <div class="col-8">
+                <div key="Undergraduate student" style="display: flex;unicode-bidi: isolate;flex-wrap: wrap;"
+                    class="col-12">
+                    <div>
+
+                        <img src="https://drive.google.com/thumbnail?id=1vuCUPEI4M3oy0Z197jGM8o4RDAIvi9dZ&amp;sz=w300"
+                            alt=""
+                            style="display: inline-block;width: 100px;max-width: 100%;height: auto;vertical-align: middle;border: 0; border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0.5em;margin-right: 0.5em;">
+                    </div>
+
+                    <div style="text-align: left;margin-left: 1em;" class="researcher-text">
+                        <h4 style="text-align: left;margin-bottom: 0.5em;font-size: 20px;">
+                            Umang</h4>
+                        <p style="unicode-bidi: isolate;text-align: left;">
+                            <i style="box-sizing: border-box;left: 0;padding-down: 0.25;">Undergraduate student,
+                                Electrical
+                                Engineering (IIT-Delhi) (2021)
+
+                                <br />
+                                email: ersf
+                            </i>
+                        </p>
+                        <h5
+                            style="font-size: 16px;margin-block-start: 1.5em;margin-block-end: 1em;margin-inline-start: 0;margin-inline-end: 0;box-sizing: border-box;line-height: 1;font-weight: 400;display: block;text-align: left;unicode-bidi: isolate;">
+                            Pursuing MS (Computer Engineering) at Carnegie Mellon University</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div key="Undergraduate student" style="display: flex;unicode-bidi: isolate;flex-wrap: wrap;"
+                    class="col-12">
+                    <div>
+
+                        <img src="https://drive.google.com/thumbnail?id=1bgGrzLcKAm3JRT_qrv-TdAOuSuxDNWoV&amp;sz=w300"
+                            alt=""
+                            style="display: inline-block;width: 100px;max-width: 100%;height: auto;vertical-align: middle;border: 0; border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0.5em;margin-right: 0.5em;">
+                    </div>
+
+                    <div style="text-align: left;margin-left: 1em;" class="researcher-text">
+                        <h4 style="text-align: left;margin-bottom: 0.5em;font-size: 20px;">
+                            Ujjwal</h4>
+                        <p style="unicode-bidi: isolate;text-align: left;">
+                            <i style="box-sizing: border-box;left: 0;padding-down: 0.25;">Undergraduate student,
+                                Electrical
+                                Engineering (IIT Delhi) (2022)
+
+                                <br />
+                                email: gfgh
+                            </i>
+                        </p>
+                        <h5
+                            style="font-size: 16px;margin-block-start: 1.5em;margin-block-end: 1em;margin-inline-start: 0;margin-inline-end: 0;box-sizing: border-box;line-height: 1;font-weight: 400;display: block;text-align: left;unicode-bidi: isolate;">
+                            System Engineer - Enphase Energy</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div key="Undergraduate student" style="display: flex;unicode-bidi: isolate;flex-wrap: wrap;"
+                    class="col-12">
+                    <div>
+
+                        <img src="https://drive.google.com/thumbnail?id=18p2NuiVRhprRLToq2nizT6PO-NuL42tX&amp;sz=w300"
+                            alt=""
+                            style="display: inline-block;width: 100px;max-width: 100%;height: auto;vertical-align: middle;border: 0; border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0.5em;margin-right: 0.5em;">
+                    </div>
+
+                    <div style="text-align: left;margin-left: 1em;" class="researcher-text">
+                        <h4 style="text-align: left;margin-bottom: 0.5em;font-size: 20px;">
+                            Umesh</h4>
+                        <p style="unicode-bidi: isolate;text-align: left;">
+                            <i style="box-sizing: border-box;left: 0;padding-down: 0.25;">Undergraduate student,
+                                Electrical
+                                Engineering (IIT-Delhi) (2022)
+
+                                <br />
+                                email: ugj
+                            </i>
+                        </p>
+                        <h5
+                            style="font-size: 16px;margin-block-start: 1.5em;margin-block-end: 1em;margin-inline-start: 0;margin-inline-end: 0;box-sizing: border-box;line-height: 1;font-weight: 400;display: block;text-align: left;unicode-bidi: isolate;">
+                            Software job</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div key="Undergraduate student" style="display: flex;unicode-bidi: isolate;flex-wrap: wrap;"
+                    class="col-12">
+                    <div>
+
+                        <img src="https://drive.google.com/thumbnail?id=12zQE9FvuBWYYHINy6KDFgyCU17Mb6BAt&amp;sz=w300"
+                            alt=""
+                            style="display: inline-block;width: 100px;max-width: 100%;height: auto;vertical-align: middle;border: 0; border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0.5em;margin-right: 0.5em;">
+                    </div>
+
+                    <div style="text-align: left;margin-left: 1em;" class="researcher-text">
+                        <h4 style="text-align: left;margin-bottom: 0.5em;font-size: 20px;">
+                            Ulysyss</h4>
+                        <p style="unicode-bidi: isolate;text-align: left;">
+                            <i style="box-sizing: border-box;left: 0;padding-down: 0.25;">Undergraduate student,
+                                Electircal
+                                Engineering (IIT-Delhi) (2022)
+
+                                <br />
+                                email: uigujg
+                            </i>
+                        </p>
+                        <h5
+                            style="font-size: 16px;margin-block-start: 1.5em;margin-block-end: 1em;margin-inline-start: 0;margin-inline-end: 0;box-sizing: border-box;line-height: 1;font-weight: 400;display: block;text-align: left;unicode-bidi: isolate;">
+                            Pursuing MS (Computer Science) at University of Wisconsin-Madison</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div key="Undergraduate student" style="display: flex;unicode-bidi: isolate;flex-wrap: wrap;"
+                    class="col-12">
+                    <div>
+
+                        <img src="https://drive.google.com/thumbnail?id=1MI8R_8TO-Hoo5y3k305AsZwWDuZ50CEr&amp;sz=w300"
+                            alt=""
+                            style="display: inline-block;width: 100px;max-width: 100%;height: auto;vertical-align: middle;border: 0; border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0.5em;margin-right: 0.5em;">
+                    </div>
+
+                    <div style="text-align: left;margin-left: 1em;" class="researcher-text">
+                        <h4 style="text-align: left;margin-bottom: 0.5em;font-size: 20px;">
+                            Uday</h4>
+                        <p style="unicode-bidi: isolate;text-align: left;">
+                            <i style="box-sizing: border-box;left: 0;padding-down: 0.25;">Undergraduate student,
+                                Electrical
+                                Engineering (IIT-Delhi) (2023)
+
+                                <br />
+                                email: vxvd
+                            </i>
+                        </p>
+                        <h5
+                            style="font-size: 16px;margin-block-start: 1.5em;margin-block-end: 1em;margin-inline-start: 0;margin-inline-end: 0;box-sizing: border-box;line-height: 1;font-weight: 400;display: block;text-align: left;unicode-bidi: isolate;">
+                            Pursuing MS/PhD in the US</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div key="Intern" style="display: flex;unicode-bidi: isolate;flex-wrap: wrap;" class="col-12">
+                    <div>
+
+                        <img src="https://drive.google.com/thumbnail?id=18XWPNihceVtI8JBrs42gwLeunGu5-w2f&amp;sz=w300"
+                            alt=""
+                            style="display: inline-block;width: 100px;max-width: 100%;height: auto;vertical-align: middle;border: 0; border-radius: 10%;box-shadow: 2px 2px 5px #888;margin: 0.5em;margin-right: 0.5em;">
+                    </div>
+
+                    <div style="text-align: left;margin-left: 1em;" class="researcher-text">
+                        <h4 style="text-align: left;margin-bottom: 0.5em;font-size: 20px;">
+                            Isha</h4>
+                        <p style="unicode-bidi: isolate;text-align: left;">
+                            <i style="box-sizing: border-box;left: 0;padding-down: 0.25;">Intern, BITS Pilani,
+                                Pilani Campus
+                                (2023)
+
+                                <br />
+                                email: uryt
+                            </i>
+                        </p>
+                        <h5
+                            style="font-size: 16px;margin-block-start: 1.5em;margin-block-end: 1em;margin-inline-start: 0;margin-inline-end: 0;box-sizing: border-box;line-height: 1;font-weight: 400;display: block;text-align: left;unicode-bidi: isolate;">
+                            Undergraduate Research Intern at Harvard University</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/js/multi-select-tag.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.0.1/dist/js/multi-select-tag.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script type="text/javascript" src="github.js"></script>
+    <script type="text/javascript">
+
+        new MultiSelectTag('countries', {
+            rounded: true,    // default true
+            shadow: true,
+            tagColor: {
+                textColor: '#327b2c',
+                borderColor: '#92e681',
+                bgColor: '#eaffe6',
+            },
+            onChange: function (values) {
+                let arr = values.map(obj => obj.label)
+                console.log(arr)
+                logArr(arr)
+            }
+        })
+
+        function logArr(arr) {
+            console.log(arr); // Log arr using a callback function
+            const divs = document.querySelectorAll('div[key]')
+            divs.forEach(element => {
+
+                const cat = element.getAttribute("key");
+                if (!arr.includes(cat)) {
+                    element.classList.add('hidden')
+                    // console.log(element.classList)
+                } else {
+                    element.classList.remove('hidden');
+                }
+                if (arr.length === 0) {
+                    element.classList.remove('hidden');
+                }
+
+            });
+        }
+    </script>
+
+</body>
+
+</html>
